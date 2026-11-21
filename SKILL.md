@@ -6,6 +6,11 @@ name: xhs-matrix
 description: "小红薯账号矩阵数据源（只读）：关键词搜笔记、爆款选题、笔记详情、评论舆情、博主作品、粉丝获赞与收藏，输出 JSON，不登录不发布。触发词：小红书、小红薯、xhs、rednote、笔记链接、博主主页、竞品监控、KOL筛选、评论分析。用户要查小红书笔记、评论、选题、竞品或舆情时使用；抖音、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.2.3
+display_name: "小红薯账号矩阵｜多账号巡检·批量数据·横向对比·统一看板"
+display_name_en: "Xiaohongshu Matrix"
+description_zh: "小红薯账号矩阵数据源（只读）：批量拉取多个小红书博主的公开数据，多账号巡检、横向对比、统一看板。五类能力：①关键词搜笔记，支持图文/视频筛选、综合/最新/最多点赞等排序、1天/一周/半年时间与条数筛选；②单篇笔记详情：标题、正文、图片、互动与作者信息；③评论抓取，可按近 N 天过滤，用于舆情归因；④博主作品列表，看各矩阵账号最近发了什么；⑤博主粉丝、获赞、收藏数据（limit=0 只取资料），用于矩阵横向对比与 KOL 筛选。支持 explore、discovery/item、xhslink 短链与 24 位笔记 id、24/29 位 user_id，可粘贴 App 分享文案自动抽链。统一 JSON 信封，可导入 Excel/BI 或交给 AI 批量汇总。不登录、不发布、不点赞、不评论、不关注，无封号风险。按量单次最多 10000 条；包月搜索≤40、作品≤30、评论≤20，超限返回 PLAN_LIMIT。仅需 Node.js 16.14+ 与 GUAIKEI_API_TOKEN，零依赖，国内直连。适用于矩阵巡检、运营复盘、竞品对标与数据看板。"
+description_en: "Read-only Xiaohongshu account-matrix data source: batch-fetch public data of multiple creators for multi-account patrol, comparison and dashboards. 1) Keyword search with image/video filters, relevance/newest/most-liked sorting, day/week/month windows, count limits; 2) Note detail: title, body, images, engagement, author; 3) Comment scraping with day-range filters; 4) Creator post listings tracking recent output of each account; 5) Follower/like/collection stats (limit=0 = profile only) for benchmarking and KOL screening. Accepts explore/discovery/item links, xhslink short links, note/user ids, and pasted share text with auto link extraction. One JSON envelope for success, empty and failure; ready for Excel/BI or AI summaries. No login, no posting/liking/commenting/following, no ban risk. Pay-as-you-go up to 10,000 items per call; monthly caps 40/30/20 for searches/posts/comments, then PLAN_LIMIT. Needs only Node.js 16.14+ and GUAIKEI_API_TOKEN; zero deps; direct from mainland China."
+author: "新郑市怪奇信息技术工作室"
 category: 数据分析
 homepage: https://www.guaikei.com
 metadata:
